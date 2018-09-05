@@ -28,32 +28,12 @@ mandatory fields).
     with_red_star("Plop")
     <span>Plop<span style="color:red">*</span></span>
 
-Result:
-
-``` r
-with_red_star("Plop")
-```
-
-<!--html_preserve-->
-
-<span>Plop<span style="color:red">\*</span></span><!--/html_preserve-->
-
 ### `enurl`
 
 Takes an url and a text and create a link:
 
     enurl("https://www.thinkr.fr", "ThinkR")
     <a href="https://www.thinkr.fr">ThinkR</a>
-
-Result:
-
-``` r
-enurl("https://www.thinkr.fr", "ThinkR")
-```
-
-<!--html_preserve-->
-
-<a href="https://www.thinkr.fr">ThinkR</a><!--/html_preserve-->
 
 ### `rep_br`
 
@@ -62,16 +42,6 @@ Repeat a `tags$br` n times
     rep_br(times = 3)
     <br/> <br/> <br/>
 
-Result:
-
-``` r
-rep_br(times = 3)
-```
-
-<!--html_preserve-->
-
-<br/> <br/> <br/><!--/html_preserve-->
-
 ### `list_to_li` & `list_to_p`
 
 Turns an R list to an HTML list or into paragraphs.
@@ -79,28 +49,6 @@ Turns an R list to an HTML list or into paragraphs.
     list_to_li(c("a","b"))
     <li>a</li>
     <li>b</li>
-
-Result:
-
-``` r
-list_to_li(c("a","b"))
-```
-
-<!--html_preserve-->
-
-<li>
-
-a
-
-</li>
-
-<li>
-
-b
-
-</li>
-
-<!--/html_preserve-->
 
 You can add a class to each with the class parameters.
 
@@ -119,63 +67,6 @@ Turn a named vector into a named html list:
     <li><b>a:</b> One</li>
     <li><b>b:</b> two</li>
     <li><b>c:</b> three</li>
-
-Result:
-
-``` r
-pouet <- c("One", "two", "three")
-names(pouet) <- c("a", "b", "c")
-
-named_to_li(pouet)
-```
-
-<!--html_preserve-->
-
-<li>
-
-<b>a:</b> One
-
-</li>
-
-<li>
-
-<b>b:</b> two
-
-</li>
-
-<li>
-
-<b>c:</b> three
-
-</li>
-
-<!--/html_preserve-->
-
-``` r
-named_to_li(pouet)
-```
-
-<!--html_preserve-->
-
-<li>
-
-<b>a:</b> One
-
-</li>
-
-<li>
-
-<b>b:</b> two
-
-</li>
-
-<li>
-
-<b>c:</b> three
-
-</li>
-
-<!--/html_preserve-->
 
 You can also pass a class:
 
