@@ -1,0 +1,17 @@
+Package: brighter
+Title: Random tools for Shiny dev
+Version: 0.0.0.9000
+Authors@R: person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'))
+Description: Random tools for easier shiny development
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/Thinkr-open/brighter
+BugReports: https://github.com/Thinkr-open/brighter/issues
+Encoding: UTF-8
+Suggests: 
+    testthat
+Imports: 
+    attempt,
+    htmltools,
+    glue
+RoxygenNote: 6.1.0
