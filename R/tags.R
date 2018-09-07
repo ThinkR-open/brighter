@@ -17,3 +17,37 @@ tagRemoveAttributes <- function(tag, ...){
   }
   tag
 }
+
+#' Hide or display a tag
+#'
+#' @param tag the tag
+#'
+#' @return a tag
+#' @export
+#
+#' @importFrom htmltools tagList
+#'
+#' @examples
+#' a <- tags$p(src = "plop", "pouet")
+#' undisplay(a)
+#'
+#' @rdname display
+
+undisplay <- function(tag){
+  tags$span(
+    style = "display: none;",
+    tag
+  )
+}
+
+#' @rdname display
+#' @importFrom htmltools tagList
+
+display <- function(tag){
+  if ( grepl("display: none;", b$attribs$style) ){
+    tagList(tag$children)
+  } else {
+    tag
+  }
+
+}

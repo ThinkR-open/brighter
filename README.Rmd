@@ -118,4 +118,23 @@ tagRemoveAttributes(a, "src", "style")
 <p>pouet</p>
 ```
 
+### `display` and `undisplay`
+
+Put and remove a div to and from a `<span style="display: none;">`. Allow to dynamically show and hide content.
+
+```
+a <- shiny::tagAppendAttributes(
+  shiny::tags$a("pouet"), 
+  style = "align: center;")
+b <- undisplay(a)
+b
+<span style="display: none;">
+  <a style="align: center;">pouet</a>
+</span>
+  
+display(b)
+<a style="align: center;">pouet</a>
+```
+
+
 Please note that the 'brighter' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
