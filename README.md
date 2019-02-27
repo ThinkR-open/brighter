@@ -1,6 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+## NOTES 
+
+All these functions has moved to [{golem}](https://github.com/ThinkR-open/golem).
+
 # brighter
 
 {brighter} is a toolbox of random functions for easier shiny
